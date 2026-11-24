@@ -24,7 +24,7 @@ Complete the encryption and decryption functions on the relay
   ciphertext = encryptor.update(ciphertext) + encryptor.finalize()
 
   ### Decrypting
-  decrpyer = cipher.decryptor()
+  decryptor = cipher.decryptor()
   
   ciphertext = decryptor.update(ciphertext) + decryptor.finalize()
   
@@ -35,5 +35,5 @@ Messages start at the start client using the function send_message()
 
 Each relay node automatically generates a key; you will have to manually add these to the start client (done for you in the example)
 
-The messages are 'sent' via recurvise function calls
+The messages are 'sent' via recursive function calls
 
